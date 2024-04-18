@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<title>Switch Statement</title>
+<body>
+<h1>hello welcome to Switch statement</h1>
+<input type="text" id="days">
+<button onclick="day()">SUBMIT</button>
+<script>
+function day(){
+var day=parseInt(document.getElementById("days").value);
+switch(day){	
+case 1:
+document.write("its Monday");
+break;
+case 2:
+document.write("its tuesday");
+break;
+case 3:
+document.write("its wednesday");
+break;
+case 4:
+document.write("its thuesday");
+break;
+case 5:
+document.write("its friday");
+break;
+case 6:
+document.write("its saturday");
+break;
+case 7:
+document.write("its Sunday");
+break;
+default :
+document.write("Involid number");
+}
+}
+</script>
+</body>
+</html>
+

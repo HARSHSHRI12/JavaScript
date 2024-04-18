@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<title>Conditional Statement</title>
+<head>
+<style>
+		body{
+		background-color: #f4f4f4; 
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+}
+		
+		.input-container{
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 50px;
+		box-shadow: 0 0 10px rgba (0,0,0,0.1);
+		align-items: center;
+}
+		
+	   .form-group{
+		cursor: pointer;
+}
+</style>
+</head>
+<body>
+<h1><b>hello welcome To Voting System</h1>
+</br><div class="input-container">
+<input type="text" id="print" placeholder="CAPITL LETTER ONLY" required><br>
+<input type="number" id="print1" placeholder="MUST" required><br>
+<input type="number" id="print2" placeholder="DO NOT BLANK" required><br>
+<input type="email" id="print3" placeholder="MUST TO FILL" required><br>
+</div>
+<div class="form-group">
+<input type="button" value="SUBMITE" onclick="votesystem()">
+</div>
+<script>
+function votesystem(){
+var name=document.getElementById("print").value;
+var age=document.getElementById("print1").value;
+var Pnumber=document.getElementById("print2").value;
+var email=document.getElementById("print3").value;
+if(name==null || name==""){
+alert("name Can't be blank");
+return false;
+}
+}
+</script>
+</body>
+</html>
+
