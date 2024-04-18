@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<h1><center><u><b><i>Please Enter only number:-</i></b></u></center></h1>
+<script>
+function validate(){
+var num=document.myform.num.value;
+if (isNaN(num)){ 
+document.getElementById("number").innerHTML="Please Enter numaric value";
+return false;
+}
+else{
+return true;
+}
+}
+</script>
+<form name="myform"onsubmit="return validate()"/>
+Number :<input type="text" name="num"/><span id="number"></span><br/>
+<input type="submit" value="submit"/>
+</form>
+</body>
+</html>

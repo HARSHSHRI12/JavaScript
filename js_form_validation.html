@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<title>Hello Welcome Form</title>
+<style>
+.harsh{
+background-color:orange;
+text-align:center;
+font-size:30px;
+border:solid black;
+}
+</style>
+</head>
+<body>
+<marquee direction="ltr"><h1><b>Creat a Username And Password</b></h1></marquee>
+<script>
+function validityform(){
+var name=document.myform.name.value;
+var password=document.myform.password.value;
+if(name==null || name==""){
+alert("name can't be blank");
+return false;
+}
+else if(password.length < 8)
+{
+alert("passwor must be atleast 8 charactor long");
+return false;
+}
+}
+</script>
+<form name="myform" method="post"  onsubmit="validityform()">
+Name:<input type="text" name="name" placeholder="must Enter your name"/></br>
+Password:<input type="password" name="password" placeholder="must 8 character"/></br>
+<input type="submit" value="register"/>
+</form>
+</body>
+</html>
+

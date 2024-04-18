@@ -1,0 +1,16 @@
+<html>
+<body style="background-color:orange">
+<h1><marquee direction="ltr">Hello Welcome to getElementByName mathode</marquee><h1>
+<script>
+function totalelement(){
+var allgenders=document.getElementsByName("gender");
+alert("total Gender:"+allgenders.length);
+}
+</script>
+<form>
+Male:<input type="radio" name="gender" value="Male"/>
+Female:<input type="radio" name="gender" value="Female"/>
+Other:<input type="radio" name="gender" value="Other"/>
+<input type="button" value="total Genders" onclick="totalelement()">
+</body>
+</html>

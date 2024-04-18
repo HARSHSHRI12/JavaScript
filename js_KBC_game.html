@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.harsh{
+background-color:red;
+text-align:center;
+font-size:20px;
+}
+</style>
+</head>
+<body>
+<fieldset>
+<marquee direction="ltr"><center><legend><big><b><u>WELCOME  TO  THE  KBC  GAME</u></b></big></legend></center></marquee>
+		<h1>Who are the father of c language??</h1>
+		<h3>1.charls bebase<h3>
+		<h3>2.Dennis MacAlistair Ritchie</h3>
+		<h3>3.parelo torwaldo</h3>
+		<h3>4.karitono ronald</h3>
+
+<script>
+function shrivastava(){
+//var name = prompt("Hello! enter your name");
+//document.write("The entered name is " + name);
+var game=document.getElementById("start").value;
+if(game=="2")
+{
+document.getElementById("result").innerHTML="your answer is currect.<br/>you have earned 10 points";
+}
+else
+{
+document.getElementById("result").innerHTML="your answer is wrong.</br>your point is 0";
+}
+}
+</script>
+        <input type="text" id="start"/>
+		<input type="button" value="Check" onclick="shrivastava()"/>
+		<div id="result" class="harsh"></div>
+
+<h1>which is the first high level language??</h1>
+		<h3>1.c++<h3>
+		<h3>2.java</h3>
+		<h3>3.fortan</h3>
+		<h3>4.python</h3>
+		
+<script>
+function shri(){
+var game1=document.getElementById("start1").value;
+if(game1=="3")
+{
+document.getElementById("result1").innerHTML="Your answer is currect.<br/>you have earned 10 points";
+}
+else{
+document.getElementById("result1").innerHTML="your answer is wrong.<br/>your point is 0";
+}
+}
+</script>
+		<input type="text" id="start1"/>
+		<input type="button" value="Check" onclick="shri()"/>
+		<div id="result1" class="harsh"></div>
+
+<h1>which language is a known as a basic language of computer??</h1>
+		<h3>1.c++ language<h3>
+		<h3>2.python language</h3>
+		<h3>3.fortan language</h3>
+		<h3>4.c language</h3>
+		
+<script>
+function shriva(){
+var game1=document.getElementById("start2").value;
+if(game1=="4")
+{
+document.getElementById("result2").innerHTML="Your answer is currect.<br/>you have earned 10 points";
+}
+else{
+document.getElementById("result2").innerHTML="your answer is wrong.<br/>your point is 0";
+}
+}
+function add(){
+var add;
+document.write("The Total point is:");
+add=game+game1;
+document.write("point is :"+game+game1);
+}
+
+
+</script>
+        <input type="text" id="start2"/>
+		
+		<input type="button" value="Check" onclick="shriva()"/>
+		<!--<input type ="hidden" value ="delhi" class="coi"/>-->
+		<div id="result2" class="harsh"></div>
+        <input type="button" value="click to check" onclick="add()"/>
+
+
+
+
+
+</fieldset>
+</body>
+</html>
+
+
